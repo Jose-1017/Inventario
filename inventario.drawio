@@ -1,0 +1,165 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="8hiE39fzg_ehXkFOyUCe">
+    <mxGraphModel dx="1455" dy="1061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="291" pageHeight="413" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-3" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1102.5" y="150" as="sourcePoint" />
+            <mxPoint x="1102.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-5" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IKZd_oSIgzLzrYqNqLOJ-4" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1102.5" y="290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-7" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="IKZd_oSIgzLzrYqNqLOJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Inicializa el acumulador:&lt;div&gt;subtotal = 0&lt;div&gt;detalle = &quot; &quot;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="1022.5" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-9" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1372.5" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-10" connectable="0" parent="IKZd_oSIgzLzrYqNqLOJ-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Opcion 1: Agregar producto" vertex="1">
+          <mxGeometry relative="1" x="-0.1936" y="3" as="geometry">
+            <mxPoint x="3" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-29" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="870" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Bucle principal:&amp;nbsp;&lt;div&gt;¿Agregar producto o salir?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="230" width="185" x="1010" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-12" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IKZd_oSIgzLzrYqNqLOJ-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1492.5" y="635" as="sourcePoint" />
+            <mxPoint x="1620" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-13" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.576;exitY=0.986;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1695" y="664" />
+              <mxPoint x="1695" y="786" />
+              <mxPoint x="1560" y="786" />
+            </Array>
+            <mxPoint x="1694.9999999999995" y="692.4999999999998" as="sourcePoint" />
+            <mxPoint x="1560" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-16" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="IKZd_oSIgzLzrYqNqLOJ-15" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1770" y="635" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bucle: nombre incorrecto&lt;div&gt;&quot;Digito un numero&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="110" x="1570" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-17" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1980" y="790" />
+              <mxPoint x="1840" y="790" />
+            </Array>
+            <mxPoint x="1840" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-21" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2260" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-15" parent="1" style="whiteSpace=wrap;html=1;" value="Validar precio" vertex="1">
+          <mxGeometry height="60" width="120" x="1920" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bucle: valor incorrecto&lt;div&gt;&quot;Dígito letra o valor negativo&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="140" x="1840" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-35" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IKZd_oSIgzLzrYqNqLOJ-34" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2380" y="635" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-22" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2320" y="790" />
+              <mxPoint x="2180" y="790" />
+            </Array>
+            <mxPoint x="2320" y="665" as="sourcePoint" />
+            <mxPoint x="2180" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bucle: valor incorrecto&lt;div&gt;&quot;Cantidad &amp;gt; 0&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="110" x="2200" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-26" parent="1" style="whiteSpace=wrap;html=1;" value="Validar nombre" vertex="1">
+          <mxGeometry height="60" width="120" x="1630" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-16" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_v04VKGUPPPsM1Y8QYtq-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-30" parent="1" style="whiteSpace=wrap;html=1;" value="Mostrar detalles de la factura" vertex="1">
+          <mxGeometry height="60" width="150" x="723" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-2" edge="1" parent="1" source="IKZd_oSIgzLzrYqNqLOJ-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_v04VKGUPPPsM1Y8QYtq-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IKZd_oSIgzLzrYqNqLOJ-34" parent="1" style="whiteSpace=wrap;html=1;" value="Calcula el costo total x producto" vertex="1">
+          <mxGeometry height="60" width="160" x="2393" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-4" edge="1" parent="1" source="_v04VKGUPPPsM1Y8QYtq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_v04VKGUPPPsM1Y8QYtq-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-1" parent="1" style="whiteSpace=wrap;html=1;" value="Acumulador de totales" vertex="1">
+          <mxGeometry height="60" width="120" x="2037" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-6" edge="1" parent="1" source="_v04VKGUPPPsM1Y8QYtq-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="_v04VKGUPPPsM1Y8QYtq-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-3" parent="1" style="whiteSpace=wrap;html=1;" value="Actumula detalles&amp;nbsp;&lt;div&gt;de los&lt;br&gt;&lt;div&gt;productos y totales&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1650" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-7" edge="1" parent="1" source="_v04VKGUPPPsM1Y8QYtq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="IKZd_oSIgzLzrYqNqLOJ-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-5" parent="1" style="whiteSpace=wrap;html=1;" value="Mostrar_estado (detalles y total" vertex="1">
+          <mxGeometry height="60" width="120" x="1290" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Opcion 2: Salir" vertex="1">
+          <mxGeometry height="30" width="90" x="900" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Retorna &quot;nombre del producto y precio&quot;" vertex="1">
+          <mxGeometry height="30" width="140" x="2070" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Retorna &quot;cantidad&quot;" vertex="1">
+          <mxGeometry height="30" width="100" x="2400" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Inicio del programa" vertex="1">
+          <mxGeometry height="80" width="120" x="1042.5" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-13" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Ingresa nombre del usuario" vertex="1">
+          <mxGeometry height="60" width="186.25" x="1008.75" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Fin del programa" vertex="1">
+          <mxGeometry height="80" width="120" x="738" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-18" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Llamar funcion:&lt;br/&gt;Pedir_producto()" vertex="1">
+          <mxGeometry height="60" width="140" x="1360" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="_v04VKGUPPPsM1Y8QYtq-19" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="&lt;div&gt;Llama a la funcion&lt;/div&gt;Pedir_cantidad()" vertex="1">
+          <mxGeometry height="60" width="140" x="2250" y="605" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
