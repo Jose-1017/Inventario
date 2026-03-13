@@ -2,6 +2,7 @@
 
 Este proyecto es un programa sencillo en Python que simula un sistema de
 compra donde el usuario puede ingresar productos, cantidades y precios.\
+
 El sistema calcula automáticamente el costo total y genera un recibo
 final de compra.
 
@@ -77,7 +78,7 @@ Seleccione una opción: 1
 
 Ingrese el nombre del producto: Manzana\
 Ingrese el precio del producto: 2\
-Ingrese la cantidad: 3
+Ingrese la cantidad: 3\
 
 ------------------------------------------------------------------------
 
@@ -87,8 +88,7 @@ Ingrese la cantidad: 3
 Cliente: José
 
 Manzana x3 = \$6.00\
-Pan x2 = \$4.00
 
-TOTAL A PAGAR: \$10.00
+TOTAL A PAGAR: \$6.00
 
 ¡Gracias por su compra!
