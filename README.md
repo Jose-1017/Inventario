@@ -1,7 +1,7 @@
 # 🛒 Sistema de Inventario / Compra en Python
 
 Este proyecto es un programa sencillo en Python que simula un sistema de
-compra donde el usuario puede ingresar productos, cantidades y precios.\
+compra donde el usuario puede ingresar productos, cantidades y precios.
 
 El sistema calcula automáticamente el costo total y genera un recibo
 final de compra.
