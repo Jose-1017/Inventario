@@ -78,7 +78,7 @@ Seleccione una opción: 1
 
 Ingrese el nombre del producto: Manzana\
 Ingrese el precio del producto: 2\
-Ingrese la cantidad: 3\
+Ingrese la cantidad: 3
 
 ------------------------------------------------------------------------
 
@@ -87,7 +87,7 @@ Ingrese la cantidad: 3\
 ========= RECIBO DE COMPRA =========\
 Cliente: José
 
-Manzana x3 = \$6.00\
+Manzana x3 = \$6.00
 
 TOTAL A PAGAR: \$6.00
 
