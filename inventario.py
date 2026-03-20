@@ -1,20 +1,12 @@
 def pedir_producto():
     # validar nombre    
-    while True:
-        nombre_producto = input("\nIngrese el nombre del producto: ")
-        if nombre_producto.isalpha():
-            break
-        else:
-            print("Error: el nombre debe contener solo letras.")
+    nombre_producto = input("\nIngrese el nombre del producto: ")
 
-    # validar precio    
-    while True:
+    # validar precio 
+    precio = 0   
+    while not precio:
         try:
             precio = float(input("\nIngrese el precio del producto: "))
-            if precio > 0:
-                break
-            else:
-                print("El precio debe ser mayor que 0.")
         except ValueError:
             print("Error: debe ingresar un número válido.")
 
@@ -23,16 +15,11 @@ def pedir_producto():
 
 def pedir_cantidad():
     # Validar cantidad 
-    while True:
-        try:
-            cantidad = int(input("\nIngrese la cantidad: "))
-            if cantidad > 0:
-                return cantidad
-            else:
-                print("La cantidad debe ser mayor que 0.")
-        except ValueError:
-            print("Debe ingresar un número válido.")
-
+    cantidad = int(input("\nIngrese la cantidad: "))
+    while cantidad<=0:                     
+        print("Debe ingresar un número válido.")
+        cantidad = int(input("\nIngrese la cantidad: "))
+    return cantidad
 
 def mostrar_estado(detalle, total):
     print("\n--- Estado actual de la compra ---")
@@ -45,7 +32,7 @@ nombre = input("\nIngrese su nombre: ")
 total = 0
 opcion = 0
 detalle = "" 
-inventario = {}
+inventario = []
 
 while opcion != 4: 
 
@@ -70,18 +57,20 @@ while opcion != 4:
             detalle += f"{nombre_producto} x{cantidad} = ${costo_total:.2f}\n"
 
             # Guardar múltiples productos
-            inventario[nombre_producto] = {
+            inventario.append( {
+                "nombre": nombre_producto,
                 "precio": precio,
                 "cantidad": cantidad
-            }
+            })
+
 
         case 2:
             if not inventario:
                 print("\nEl inventario está vacío.")
             else:
                 print("\n--- Inventario ---")
-                for producto, datos in inventario.items():
-                    print(f"{producto} -> Precio: ${datos['precio']}, Cantidad: {datos['cantidad']}")
+                for datos in inventario:
+                    print(f"{datos['nombre']} Precio: ${datos['precio']}, Cantidad: {datos['cantidad']}")
 
         case 3:
             mostrar_estado(detalle, total)
@@ -94,7 +83,6 @@ while opcion != 4:
 
 
 # RECIBO FINAL
-mostrar_estado(detalle, total)
 print("\n========= RECIBO DE COMPRA =========")
 print(f"Cliente: {nombre}\n")
 print(detalle)
@@ -113,3 +101,4 @@ print("\n¡Gracias por su compra!")
 # El sistema acumula el total y guarda el detalle de los productos ingresados.
 # Después de cada producto se muestra el estado actual de la compra.
 # Al finalizar, se imprime el recibo con el total a pagar. 
+
