@@ -28,13 +28,14 @@ El inventario se maneja como una lista de diccionarios:
     "precio": float,
     "cantidad": int
 }
+
 ⚙️ Instalación y Ejecución
 Asegúrate de tener Python instalado (3.x)
 Clona o descarga el proyecto
 Ejecuta el archivo principal:
 python inventario.py
-📌 Uso del Programa
 
+📌 Uso del Programa
 Al ejecutar el programa, se mostrará un menú interactivo:
 
 1 - Agregar producto
