@@ -1,0 +1,147 @@
+import csv
+
+def cargar_estudiantes(ruta, estudiantes, sobrescribir=True):
+
+    # Validar que sea archivo CSV usando split
+    if ruta.split(".")[-1].lower() != "csv":
+        print("Error: El archivo debe ser CSV")
+        return estudiantes
+    
+    new_estudiantes = []
+    filas_invalidas = 0
+
+    def fila_valida(fila):
+        """
+        Valida que una fila del CSV tenga estructura y datos correctos.
+
+        Verifica:
+        - Que la fila no esté vacía
+        - Que contenga las claves correctas
+        - Que ningún valor esté vacío
+        - Que id sea int
+        - Que edad sea int y no negativa
+        - Que estado sea válido (activo/inactivo)
+
+        Retorna:
+            bool
+        """
+
+        claves = ["id", "nombre", "edad", "curso", "estado"]
+
+        # Validar estructura
+        if not fila:
+            return False
+
+        for clave in claves:
+            if clave not in fila:
+                return False
+
+        # Validar vacíos
+        for clave in claves:
+            if not fila[clave]:
+                return False
+
+        # Validar tipos y valores
+        try:
+            id_est = int(fila["id"])
+            edad = int(fila["edad"])
+
+            if id_est < 0 or edad < 0:
+                return False
+
+            if fila["estado"].lower() not in ["activo", "inactivo"]:
+                return False
+
+        except ValueError:
+            return False
+
+        return True
+
+    def buscar_estudiante(estudiantes, id_est):
+        for est in estudiantes:
+            if est["id"] == id_est:
+                return est
+        return None
+
+    try:
+        with open(ruta, mode='r', newline='', encoding='utf-8') as archivo:
+            lector_csv = csv.DictReader(archivo)
+
+            # Validar encabezado
+            if lector_csv.fieldnames != ["id", "nombre", "edad", "curso", "estado"]:
+                print("Error: encabezado inválido. Debe ser: id,nombre,edad,curso,estado")
+                return estudiantes
+
+            if not sobrescribir:
+                print("Cargando estudiantes sin sobrescribir el registro actual.")
+
+                for fila in lector_csv:
+                    if not fila_valida(fila):
+                        filas_invalidas += 1
+                        continue
+
+                    estudiante = {
+                        "id": int(fila["id"]),
+                        "nombre": fila["nombre"],
+                        "edad": int(fila["edad"]),
+                        "curso": fila["curso"],
+                        "estado": fila["estado"].lower()
+                    }
+
+                    # 🔴 VALIDAR ID ÚNICO
+                    encontrado = buscar_estudiante(estudiantes, estudiante["id"])
+
+                    if encontrado:
+                        print(f"ID duplicado omitido: {estudiante['id']}")
+                        filas_invalidas += 1
+                        continue
+                    else:
+                        new_estudiantes.append(estudiante)
+
+                estudiantes.extend(new_estudiantes)
+                print("Se fusionó el registro de estudiantes")
+
+            else:
+                estudiantes = []
+
+                for fila in lector_csv:
+                    if not fila_valida(fila):
+                        filas_invalidas += 1
+                        continue
+
+                    estudiante = {
+                        "id": int(fila["id"]),
+                        "nombre": fila["nombre"],
+                        "edad": int(fila["edad"]),
+                        "curso": fila["curso"],
+                        "estado": fila["estado"].lower()
+                    }
+
+                    # 🔴 VALIDAR ID ÚNICO EN EL MISMO ARCHIVO
+                    if buscar_estudiante(estudiantes, estudiante["id"]):
+                        print(f"ID duplicado en archivo omitido: {estudiante['id']}")
+                        filas_invalidas += 1
+                        continue
+
+                    estudiantes.append(estudiante)
+
+                new_estudiantes = estudiantes
+                print("Se sobrescribió el registro de estudiantes")
+
+    except FileNotFoundError:
+        print(f"No se encontró el archivo: {ruta}")
+
+    except UnicodeDecodeError:
+        print("Error: problema de codificación del archivo")
+
+    except Exception as e:
+        print(f"Error inesperado: {e}")
+
+    print(f"Estudiantes cargados: {new_estudiantes}")
+
+    if filas_invalidas > 0:
+        print(f"{filas_invalidas} filas inválidas omitidas")
+    else:
+        print("No hubo filas inválidas")
+
+    return estudiantes
